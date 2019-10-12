@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?><ChoregrapheProject xmlns="http://www.aldebaran-robotics.com/schema/choregraphe/project.xsd" xar_version="3"><Box name="root" id="-1" localization="8" tooltip="Root box of Choregraphe&apos;s behavior. Highest level possible." x="0" y="0"><bitmap>media/images/box/root.png</bitmap><script language="4"><content><![CDATA[]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Timeline enable="0"><BehaviorLayer name="behavior_layer1"><BehaviorKeyframe name="keyframe1" index="1"><Diagram><Box name="Python Script" id="1" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="159" y="34"><bitmap>media/images/box/box-python-script.png</bitmap><script language="4"><content><![CDATA[import random
+<?xml version="1.0" encoding="UTF-8" ?><ChoregrapheProject xmlns="http://www.aldebaran-robotics.com/schema/choregraphe/project.xsd" xar_version="3"><Box name="root" id="-1" localization="8" tooltip="Root box of Choregraphe&apos;s behavior. Highest level possible." x="0" y="0"><bitmap>media/images/box/root.png</bitmap><script language="4"><content><![CDATA[]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Timeline enable="0"><BehaviorLayer name="behavior_layer1"><BehaviorKeyframe name="keyframe1" index="1"><Diagram><Box name="Python Script" id="1" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="415" y="86"><bitmap>media/images/box/box-python-script.png</bitmap><script language="4"><content><![CDATA[import random
 
 class MyClass(GeneratedClass):
     def __init__(self):
@@ -12,6 +12,116 @@ class MyClass(GeneratedClass):
             self.logger.info('Running on virtual robot')
             self.speech = None
 
+        self.words = ['univerzita', 'rododendron', 'koriandr']
+        self.alphabet = {
+            ######################
+            'a'             : 'a',
+            'á'             : 'a',
+            'áčko'          : 'a',
+            ######################
+            'b'             : 'b',
+            'bé'            : 'b',
+            'béčko'         : 'b',
+            ######################
+            'c'             : 'c',
+            'cé'            : 'c',
+            'céčko'         : 'c',
+            ######################
+            'd'             : 'd',
+            'dé'            : 'd',
+            'déčko'         : 'd',
+            ######################
+            'e'             : 'e',
+            'é'             : 'e',
+            'éčko'          : 'e',
+            ######################
+            'f'             : 'f',
+            'ef'            : 'f',
+            'efko'          : 'f',
+            ######################
+            'g'             : 'g',
+            'gé'            : 'g',
+            'géčko'         : 'g',
+            ######################
+            'h'             : 'h',
+            'há'            : 'h',
+            'háčko'         : 'h',
+            ######################
+            'i'             : 'i',
+            'í'             : 'i',
+            'íčko'          : 'i',
+            ######################
+            'j'             : 'j',
+            'jé'            : 'j',
+            'jéčko'         : 'j',
+            ######################
+            'k'             : 'k',
+            'ká'            : 'k',
+            'káčko'         : 'k',
+            ######################
+            'l'             : 'l',
+            'el'            : 'l',
+            'elko'          : 'l',
+            ######################
+            'm'             : 'm',
+            'em'            : 'm',
+            'emko'          : 'm',
+            ######################
+            'n'             : 'n',
+            'en'            : 'n',
+            'enko'          : 'n',
+            ######################
+            'o'             : 'o',
+            'ó'             : 'o',
+            'óčko'          : 'o',
+            ######################
+            'p'             : 'p',
+            'pé'            : 'p',
+            'péčko'         : 'p',
+            ######################
+            'q'             : 'q',
+            'kvé'           : 'q',
+            'kvéčko'        : 'q',
+            ######################
+            'r'             : 'r',
+            'er'            : 'r',
+            'erko'          : 'r',
+            ######################
+            's'             : 's',
+            'es'            : 's',
+            'esko'          : 's',
+            ######################
+            't'             : 't',
+            'té'            : 't',
+            'téčko'         : 't',
+            ######################
+            'u'             : 'u',
+            'ů'             : 'u',
+            'ú'             : 'u',
+            'ůčko'          : 'u',
+            'účko'          : 'u',
+            ######################
+            'v'             : 'v',
+            'vé'            : 'v',
+            'véčko'         : 'v',
+            ######################
+            'dvojité v'     : 'w',
+            'dvojité vé'    : 'w',
+            'dvojité véčko' : 'w',
+            ######################
+            'x'             : 'x',
+            'iks'           : 'x',
+            'iksko'         : 'x',
+            'xko'           : 'x',
+            ######################
+            'y'             : 'y',
+            'ypsilon'       : 'y',
+            ######################
+            'z'             : 'z',
+            'zet'           : 'z',
+            'zetko'         : 'z',
+        }
+
     def get_answer(self, reactions):
         if self.speech is None:
             return (random.choice(reactions.keys()))
@@ -22,18 +132,92 @@ class MyClass(GeneratedClass):
             time.sleep(20)
             self.speech.unsubscribe("Test_ASR")
 
-    def onInput_onStart(self):
-        self.tts.say("Ahoj, jak se máš?")
+    def wordGetLettersIndexes(self, guessWord, letter):
+        idxs = []
+        for i in range(len(guessWord)):
+            if guessWord[i] == letter:
+                idxs.append(i)
+        return idxs
+
+    def setValuesToListByIndexes(self, destList, indexes, value):
+        for index in indexes:
+            destList[index] = value
+        return destList
+
+    def startGallowsGame(self):
+        self.tts.say('Znáš pravidla?')
         reactions = {
-            'dobře':  'to je super!',
-            'špatně': 'doufám, že to brzo bude lepší',
-            'nevím': 'tak to určitě nebude tak zlé',
+            'ano': 'Dobře',
+            'jo' : 'Dobře',
+            'ne' : """Tak já ti to vysvětlím. Já si budu myslet slovo, ukážu ti na mojem tabletu první a poslední písmeno
+                   a počet písmen mezi. Tvojím úkolem je uhodnout, co za slovo si myslím. Říkej písmenka a já podle toho
+                   budu upravovat výstup na tabletu. Můžeš taky v průběhu zkusit uhodnout celé slovo. Pokud ale neuspěješ,
+                   bude tě to stát jeden pokus. Celkově máš 10 pokusů. Hodně štěstí!"""
+        }
+        guessWord                = self.words[random.randint(0, len(self.words)-1)]
+        userProgress             = [False for i in range(len(guessWord))]
+        userProgress[0]          = True              # First letter is always displayed
+        userProgress[-1]         = True              # Last letter is always displayed
+        self.alphabet[guessWord] = guessWord         # Append guessed word to alphabet, so that user can guess the whole word
+        emergencyExit            = ['Karle konec']   # To manually exit while loop
+        failNumber               = 0
+
+        self.tts.say('Můžeme začít. Myslím si slovo')
+        self.logger.info('Guessing word : {}'.format(guessWord))
+        self.wordGuessed = False
+
+        # Answers to letter in guessWord
+        self.letterInWord     = ['Výborně, uhodl jsi písmenko', 'Super, jde ti to. Písmenko tam je']
+        self.letterNotInWord  = ['Bohužel, písmenko ve slově není.', 'S takovou budeš brzo viset. Písmenko ve slově není.', 'Promiň, ale musím ti přidat jeden neúspěšný pokus']
+        self.guessedWholeWord = ['No to není možné. Uhodl jsi celé slovo. Gratuluji, vyhrál jsi']
+
+        # TODO self.tablet.showBeginning()
+        # Diacritics will be ignored for now
+        while not self.wordGuessed:
+            if failNumber > 10:
+                self.tts.say('Už jsi se desetkrát netrefil. Konec hry')
+                break
+            letter = self.alphabet.get(self.get_answer(self.alphabet))
+            if letter == emergencyExit:
+                self.logger.info('Stopping manually')
+                break
+            if letter == guessWord:
+                self.tts.say(self.guessedWholeWord[random.randint(0, len(self.guessedWholeWord) -1)])
+                self.wordGuessed = True
+                break
+
+            if letter in guessWord:
+                indexes      = self.wordGetLettersIndexes(guessWord, letter)
+                userProgress = self.setValuesToListByIndexes(userProgress, indexes, True)
+
+                self.tts.say(self.letterInWord[random.randint(0, len(self.letterInWord)-1)])
+                userProgress[guessWord.index(letter)] = True
+                self.logger.info('Word = {}, userProgress = {}'.format(guessWord, userProgress))
+                if userProgress == [True for i in range(len(guessWord))]:
+                    self.WordGuessed = True
+                    self.tts.say(self.guessedWholeWord[random.randint(0, len(self.guessedWholeWord) -1)])
+            else:
+                self.tts.say(self.letterNotInWord[random.randint(0, len(self.letterNotInWord)-1)])
+                failNumber += 1
+
+    def onInput_onStart(self):
+        self.tts.say("Ahoj, chceš hrát šibenici?")
+        reactions = {
+            'ano':  'Tak jo. Budu si myslet slovo.',
+            'jo': 'Tak jo. Budu si myslet slovo',
+            'ne': 'Když nechceš hrát, tak proč mě zapínáš?',
         }
         answer = self.get_answer(reactions)
         react = reactions.get(answer)
         self.logger.info('answer={}, react={}'.format(answer, react))
         self.tts.say(react)
+
+        if answer in ['ano', 'jo']:
+            self.logger.info('Positive answer found, starting the game')
+            self.startGallowsGame()
+
         self.onStopped()
+
 
     def onLoad(self):
         #put initialization code here
