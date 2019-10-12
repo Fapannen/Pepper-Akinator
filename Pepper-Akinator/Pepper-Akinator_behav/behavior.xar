@@ -12,6 +12,8 @@ class MyClass(GeneratedClass):
             self.logger.info('Running on virtual robot')
             self.speech = None
 
+        #Include words you want Pepper to know into this list.
+        #Without diacritics so far
         self.words = ['univerzita', 'rododendron', 'koriandr']
         self.alphabet = {
             ######################
@@ -132,6 +134,7 @@ class MyClass(GeneratedClass):
             time.sleep(20)
             self.speech.unsubscribe("Test_ASR")
 
+    #Returns a list of indexes on which 'letter' is found
     def wordGetLettersIndexes(self, guessWord, letter):
         idxs = []
         for i in range(len(guessWord)):
@@ -154,29 +157,32 @@ class MyClass(GeneratedClass):
                    budu upravovat výstup na tabletu. Můžeš taky v průběhu zkusit uhodnout celé slovo. Pokud ale neuspěješ,
                    bude tě to stát jeden pokus. Celkově máš 10 pokusů. Hodně štěstí!"""
         }
-        guessWord                = self.words[random.randint(0, len(self.words)-1)]
-        userProgress             = [False for i in range(len(guessWord))]
+        guessWord                = self.words[random.randint(0, len(self.words)-1)] # Choose random word to guess
+        userProgress             = [False for i in range(len(guessWord))]           # User progress tracker - True if letter guessed
         userProgress[0]          = True              # First letter is always displayed
         userProgress[-1]         = True              # Last letter is always displayed
         self.alphabet[guessWord] = guessWord         # Append guessed word to alphabet, so that user can guess the whole word
         emergencyExit            = ['Karle konec']   # To manually exit while loop
-        failNumber               = 0
+        failNumber               = 0                 # Number of fails troughout the game
 
         self.tts.say('Můžeme začít. Myslím si slovo')
         self.logger.info('Guessing word : {}'.format(guessWord))
         self.wordGuessed = False
 
         # Answers to letter in guessWord
+        # Feel free to add your responses
         self.letterInWord     = ['Výborně, uhodl jsi písmenko', 'Super, jde ti to. Písmenko tam je']
         self.letterNotInWord  = ['Bohužel, písmenko ve slově není.', 'S takovou budeš brzo viset. Písmenko ve slově není.', 'Promiň, ale musím ti přidat jeden neúspěšný pokus']
         self.guessedWholeWord = ['No to není možné. Uhodl jsi celé slovo. Gratuluji, vyhrál jsi']
 
         # TODO self.tablet.showBeginning()
-        # Diacritics will be ignored for now
         while not self.wordGuessed:
+
+            #If failed too many times, stop the game
             if failNumber > 10:
                 self.tts.say('Už jsi se desetkrát netrefil. Konec hry')
                 break
+
             letter = self.alphabet.get(self.get_answer(self.alphabet))
             if letter == emergencyExit:
                 self.logger.info('Stopping manually')
@@ -191,7 +197,6 @@ class MyClass(GeneratedClass):
                 userProgress = self.setValuesToListByIndexes(userProgress, indexes, True)
 
                 self.tts.say(self.letterInWord[random.randint(0, len(self.letterInWord)-1)])
-                userProgress[guessWord.index(letter)] = True
                 self.logger.info('Word = {}, userProgress = {}'.format(guessWord, userProgress))
                 if userProgress == [True for i in range(len(guessWord))]:
                     self.WordGuessed = True
