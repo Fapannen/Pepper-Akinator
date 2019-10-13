@@ -12,7 +12,7 @@ class MyClass(GeneratedClass):
             self.logger.info('Running on virtual robot')
             self.speech = None
 
-        #self.tabletService = self._getTabletService()
+        #self.tabletService = self._getTabletService()  Doesnt run on virtual robot
 
         #Include words you want Pepper to know into this list.
         #Without diacritics so far
@@ -125,6 +125,20 @@ class MyClass(GeneratedClass):
             'zet'           : 'z',
             'zetko'         : 'z',
         }
+
+    def showIndex(self):
+        appName = self.packageUid()
+        state = False
+        if appName:
+            if tabletService:
+                if tabletService.loadApplication(appName):
+                    self.logger.info("Successfully set application: %s" % appName)
+                    tabletService.showWebview()
+                    state = True
+                else:
+                    self.logger.warning("Got tablet service, but failed to set application: %s" % appName)
+            else:
+                self.logger.warning("Couldn't find tablet service, so can't set application: %s" % appName)
 
     def _getTabletService(self):
         tabletService = None

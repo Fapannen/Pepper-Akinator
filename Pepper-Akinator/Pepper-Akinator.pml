@@ -7,6 +7,7 @@
     <Dialogs />
     <Resources>
         <File name="PyPepperAkinator" src="PyPepperAkinator.py" />
+        <File name="index" src="html/index.html" />
     </Resources>
     <Topics />
     <IgnoredPaths />
