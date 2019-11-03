@@ -1,0 +1,22 @@
+topic: ~StartGame()
+language: czc
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+
+concept:(sibenice) ["zahrajem si" "šibenice" "hrajem"]
+concept:(agree)    ["ano" "jasně" "samozřejmě" "jojo" "jistě" "jo"]
+concept:(disagree) ["Ne" "Asi ne" "Teď ne"]
+
+u:(~sibenice) Chceš si zahrát šibenici?
+    u1:(~agree) Jdeme hrát $start=1
+    u1:(~disagree) Škoda. Třeba příště $end=1
+    
+
+

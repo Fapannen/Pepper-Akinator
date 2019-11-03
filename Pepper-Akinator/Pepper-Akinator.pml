@@ -4,12 +4,18 @@
     <BehaviorDescriptions>
         <BehaviorDescription name="behavior" src="Pepper-Akinator_behav" xar="behavior.xar" />
     </BehaviorDescriptions>
-    <Dialogs />
+    <Dialogs>
+        <Dialog name="StartGame" src="StartGame/StartGame.dlg" />
+        <Dialog name="getUserInput" src="getUserInput/getUserInput.dlg" />
+    </Dialogs>
     <Resources>
         <File name="PyPepperAkinator" src="PyPepperAkinator.py" />
         <File name="index" src="html/index.html" />
     </Resources>
-    <Topics />
+    <Topics>
+        <Topic name="StartGame_czc" src="StartGame/StartGame_czc.top" topicName="StartGame" language="cs_CZ" />
+        <Topic name="getUserInput_czc" src="getUserInput/getUserInput_czc.top" topicName="getUserInput" language="cs_CZ" />
+    </Topics>
     <IgnoredPaths />
     <Translations auto-fill="en_US">
         <Translation name="translation_cs_CZ" src="translations/translation_cs_CZ.ts" language="cs_CZ" />
