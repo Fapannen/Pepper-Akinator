@@ -11,6 +11,8 @@
     <Resources>
         <File name="PyPepperAkinator" src="PyPepperAkinator.py" />
         <File name="index" src="html/index.html" />
+        <File name="script" src="html/script.js" />
+        <File name="typed.min" src="html/typed.min.js" />
     </Resources>
     <Topics>
         <Topic name="StartGame_czc" src="StartGame/StartGame_czc.top" topicName="StartGame" language="cs_CZ" />
