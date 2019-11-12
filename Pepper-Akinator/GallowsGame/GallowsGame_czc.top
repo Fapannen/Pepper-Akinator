@@ -1,0 +1,13 @@
+topic: ~GallowsGame()
+language: czc
+
+concept:(sibenice)["Zahrajem si" "Hrajem"]
+concept:(agree)["Ano" "No jasně" "Samozřejmě"]
+concept:(disagree)["Ne" "Asi ne"]
+
+u:(~sibenice) Chceš hrát šibenici?
+    u1:(~agree) Tak jo jdeme na to $play=1
+    u1:(~disagree) Tak proč říkáš hrajem? $end=1
+     
+    
+    

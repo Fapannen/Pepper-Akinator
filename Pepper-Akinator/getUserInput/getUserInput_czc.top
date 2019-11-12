@@ -10,4 +10,58 @@ language: czc
 # Replying to speech
 #u:(~hello) ~hello
 
-u:(_*) $userInput=$1
+concept:(a) [a á áčko]
+concept:(b) [b bé béčko]
+concept:(c) [c cé céčko]
+concept:(d) [d dé déčko]
+concept:(e) [e é éčko]
+concept:(f) [f ef efko] 
+concept:(g) [g gé géčko]
+concept:(h) [h há háčko]
+concept:(i) [i í íčko]
+concept:(j) [j jé jéčko]
+concept:(k) [k ká káčko]
+concept:(l) [l el elko]
+concept:(m) [m em emko] 
+concept:(n) [n en enko] 
+concept:(o) [o ó óčko]
+concept:(p) [p pé péčko] 
+concept:(q) [q kvé kvéčko]
+concept:(r) [r er erko]
+concept:(s) [s es esko]
+concept:(t) [t té téčko]
+concept:(u) [u ů ú ůčko účko]
+concept:(v) [v vé véčko] 
+concept:(w) [w "dvojité v" "dvojté v" "dvojité vé" "dvojté vé" "dvojité véčko" "dvojté véčko"]
+concept:(x) [x iks iksko xko]
+concept:(y) [y ypsilon "tvrdé í" "tvrdé y"]
+concept:(z) [z zet zetko]
+
+
+
+u:(~a) $userInput="a"
+u:(~b) $userInput="b"
+u:(~c) $userInput="c"
+u:(~d) $userInput="d"
+u:(~e) $userInput="e"
+u:(~f) $userInput="f"
+u:(~g) $userInput="g"
+u:(~h) $userInput="h"
+u:(~i) $userInput="i"
+u:(~j) $userInput="j"
+u:(~k) $userInput="k"
+u:(~l) $userInput="l"
+u:(~m) $userInput="m"
+u:(~n) $userInput="n"
+u:(~o) $userInput="o"
+u:(~p) $userInput="p"
+u:(~q) $userInput="q"
+u:(~r) $userInput="r"
+u:(~s) $userInput="s"
+u:(~t) $userInput="t"
+u:(~u) $userInput="u"
+u:(~v) $userInput="v"
+u:(~w) $userInput="w"
+u:(~x) $userInput="x"
+u:(~y) $userInput="y"
+u:(~z) $userInput="z"
