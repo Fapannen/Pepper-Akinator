@@ -20,11 +20,11 @@
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
-  <dialogContent typeVersion="1.0" topicName="StartGame">
-   <topic language="cs_CZ" path="StartGame/StartGame_czc.top"/>
+  <dialogContent topicName="StartGame" typeVersion="1.0">
+   <topic path="StartGame/StartGame_czc.top" language="cs_CZ"/>
   </dialogContent>
-  <dialogContent typeVersion="1.0" topicName="getUserInput">
-   <topic language="cs_CZ" path="getUserInput/getUserInput_czc.top"/>
+  <dialogContent topicName="getUserInput" typeVersion="1.0">
+   <topic path="getUserInput/getUserInput_czc.top" language="cs_CZ"/>
   </dialogContent>
  </contents>
  <requirements>
