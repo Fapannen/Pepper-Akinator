@@ -13,8 +13,6 @@
         <File name="index" src="html/index.html" />
         <File name="script" src="html/script.js" />
         <File name="typed.min" src="html/typed.min.js" />
-        <File name=".translation_cs_CZ.ts.236" src="translations/.translation_cs_CZ.ts.236.csp" />
-        <File name=".translation_en_US.ts.236" src="translations/.translation_en_US.ts.236.csp" />
     </Resources>
     <Topics>
         <Topic name="StartGame_czc" src="StartGame/StartGame_czc.top" topicName="StartGame" language="cs_CZ" />
