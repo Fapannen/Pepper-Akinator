@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="pepper-akinator-cf24f9" version="0.0.27">
+<package version="0.0.28" uuid="pepper-akinator-cf24f9">
  <names>
   <name lang="cs_CZ">Sibenice</name>
   <name lang="en_US">HangmanGame</name>
@@ -25,11 +25,11 @@
    </triggerSentences>
    <permissions/>
   </behaviorContent>
-  <dialogContent topicName="StartGame" typeVersion="1.0">
-   <topic path="StartGame/StartGame_czc.top" language="cs_CZ"/>
+  <dialogContent typeVersion="1.0" topicName="StartGame">
+   <topic language="cs_CZ" path="StartGame/StartGame_czc.top"/>
   </dialogContent>
-  <dialogContent topicName="getUserInput" typeVersion="1.0">
-   <topic path="getUserInput/getUserInput_czc.top" language="cs_CZ"/>
+  <dialogContent typeVersion="1.0" topicName="getUserInput">
+   <topic language="cs_CZ" path="getUserInput/getUserInput_czc.top"/>
   </dialogContent>
  </contents>
  <requirements>

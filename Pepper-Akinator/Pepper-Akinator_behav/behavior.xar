@@ -544,7 +544,6 @@ class MyClass(GeneratedClass):
 
     def onInput_onStart(self, keyword):
         # hide if already existing
-        self.hideQuestion()
         # show the new question
         self.showQuestion(keyword)
         # move
