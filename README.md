@@ -5,6 +5,9 @@ Pepper robot plays game with user. Start the game by telling one of the triggeri
 Currently the triggering words are "Zahrajem si", "Hrajem" and "Let's play". If you want to stop the game, say "konec" when robot expects a letter.
 Only Czech language is currently supported ( Both words and interaction )
 
+## Demo
+Demo run can be found [here](https://youtu.be/dvelpUd6uBg)
+
 ## Acknowledgements
 Project contains code copied from [Salisu Wada github](https://github.com/salisuwy/Pepper-Robot-Displays-User-Input) - Displaying the user progress on tablet
 
