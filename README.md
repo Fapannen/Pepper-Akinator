@@ -17,7 +17,7 @@ Project contains code copied from [Salisu Wada github](https://github.com/salisu
 Project is designed to be easily-modified to your own set of words and language.
 
 The logical structure of the project looks like this
-[StructureOfTheProject]()
+![StructureOfTheProject](https://github.com/Fapannen/Pepper-Akinator/blob/master/Pepper-Akinator/img/structure.png)
 
 
 ### StartGame dialog
