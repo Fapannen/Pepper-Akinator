@@ -1,5 +1,6 @@
 # Hangman game for Pepper robot
 ![karelInAction](https://github.com/Fapannen/Pepper-Akinator/blob/master/Pepper-Akinator/img/KarelFinal.jpg)
+
 Play a game where robot thinks of a word and your task is to guess it letter by letter. You can also try to guess the whole word.
 
 Pepper robot plays game with user. Start the game by telling one of the triggering words to robot.
