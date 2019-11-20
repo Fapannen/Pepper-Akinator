@@ -2,14 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="cs_CZ">
     <context>
-        <name>Pepper-Akinator_behav/behavior.xar:/Say</name>
-        <message>
-            <source>Hello</source>
-            <comment>Text</comment>
-            <translation type="vanished">Ahoj</translation>
-        </message>
-    </context>
-    <context>
         <name>Pepper-Akinator_behav/behavior.xar:/alreadyGuessed</name>
         <message>
             <location filename="Pepper-Akinator_behav/behavior.xar" line="0"/>
@@ -61,14 +53,6 @@
             <source>Gratuluji, vyhrál jsi</source>
             <comment>Text</comment>
             <translation type="unfinished"></translation>
-        </message>
-    </context>
-    <context>
-        <name>behavior_1/behavior.xar:/Say</name>
-        <message>
-            <source>Hello</source>
-            <comment>Text</comment>
-            <translation type="vanished">Ahoj</translation>
         </message>
     </context>
 </TS>

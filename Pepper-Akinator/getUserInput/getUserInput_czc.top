@@ -10,6 +10,9 @@ language: czc
 # Replying to speech
 #u:(~hello) ~hello
 
+dynamic:guessWord
+concept:(exit)[konec]
+
 concept:(a) [a á áčko]
 concept:(b) [b bé béčko]
 concept:(c) [c cé céčko]
@@ -38,7 +41,8 @@ concept:(y) [y ypsilon "tvrdé í" "tvrdé y"]
 concept:(z) [z zet zetko]
 
 
-
+u:(~guessWord) $userInput="gameWon"
+u:(~exit) $userInput="exitGame"
 u:(~a) $userInput="a"
 u:(~b) $userInput="b"
 u:(~c) $userInput="c"

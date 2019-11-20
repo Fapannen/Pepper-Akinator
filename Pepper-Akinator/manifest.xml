@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="pepper-akinator-cf24f9" version="0.0.15">
+<package version="0.0.28" uuid="pepper-akinator-cf24f9">
  <names>
   <name lang="cs_CZ">Sibenice</name>
   <name lang="en_US">HangmanGame</name>
@@ -18,6 +18,11 @@
  <contents>
   <behaviorContent path="Pepper-Akinator_behav">
    <nature>interactive</nature>
+   <triggerSentences>
+    <sentence lang="cs_CZ">Zahrajem si</sentence>
+    <sentence lang="cs_CZ">hrajem</sentence>
+    <sentence lang="en_US">Lets play</sentence>
+   </triggerSentences>
    <permissions/>
   </behaviorContent>
   <dialogContent topicName="StartGame" typeVersion="1.0">
