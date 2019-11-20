@@ -17,7 +17,7 @@ Project contains code copied from [Salisu Wada github](https://github.com/salisu
 Project is designed to be easily-modified to your own set of words and language.
 
 The logical structure of the project looks like this
-[StructureOfTheProject]()
+![StructureOfTheProject](https://github.com/Fapannen/Pepper-Akinator/blob/master/Pepper-Akinator/img/structure.png)
 
 
 ### StartGame dialog
@@ -54,10 +54,12 @@ def onInput_onStart(self, start):
 ```
 - Specifies the words you want the robot to choose from. Add your own :) 
 
+
 ```
 proxy.setConcept("guessWord","czc", [chosen])
 ```
 - This command sets dynamic rule for dialog recognition. This allows robot to recognize the words that is being guessed, meaning the user can try to guess the whole word. Note that you need to change "czc" to your language in case you are modyfing the dialog
+
 
 ```
 self.guessingWord(chosen)
@@ -78,15 +80,19 @@ concept:(b) [b bé béčko]
 concept:(c) [c cé céčko]
 ```
 
+
+
 ```
 dynamic:guessWord
 ```
 This dynamic rule enables user to guess the whole word
 
+
 ```
 concept:(exit)[konec]
 ```
 Specifies the set of words used to exit the application.
+
 
 ```
 concept:(a) [a á áčko]
