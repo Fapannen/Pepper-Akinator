@@ -1,5 +1,4 @@
 # Hangman game for Pepper robot
-![karel](https://github.com/Fapannen/Pepper-Akinator/blob/master/Pepper-Akinator/img/karelupload.jpg)
 ![karelInAction](https://github.com/Fapannen/Pepper-Akinator/blob/master/Pepper-Akinator/img/KarelFinal.jpg)
 Play a game where robot thinks of a word and your task is to guess it letter by letter. You can also try to guess the whole word.
 
@@ -113,3 +112,8 @@ No need to modify anything here.
 
 - Most of this part consists of [Salisu Wada's project](https://github.com/salisuwy/Pepper-Robot-Displays-User-Input)
 - Displays user progress on tablet
+
+
+
+
+![karel](https://github.com/Fapannen/Pepper-Akinator/blob/master/Pepper-Akinator/img/karelupload.jpg)
