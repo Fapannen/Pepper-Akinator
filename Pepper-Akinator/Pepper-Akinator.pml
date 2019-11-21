@@ -13,6 +13,9 @@
         <File name="index" src="html/index.html" />
         <File name="script" src="html/script.js" />
         <File name="typed.min" src="html/typed.min.js" />
+        <File name="KarelFinal" src="img/KarelFinal.jpg" />
+        <File name="karelupload" src="img/karelupload.jpg" />
+        <File name="structure" src="img/structure.png" />
     </Resources>
     <Topics>
         <Topic name="StartGame_czc" src="StartGame/StartGame_czc.top" topicName="StartGame" language="cs_CZ" />
