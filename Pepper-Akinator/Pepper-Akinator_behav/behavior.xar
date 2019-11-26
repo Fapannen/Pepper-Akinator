@@ -237,9 +237,11 @@ class MyClass(GeneratedClass):
 
         #Process user input
         if input == "gameWon":
+            self.displayProgress(self.guessingWord)
             self.wonGame()
             return
         if input == "exitGame":
+            self.displayProgress(self.guessingWord)
             self.lostGame()
             return
 
