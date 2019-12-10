@@ -203,6 +203,7 @@ class MyClass(GeneratedClass):
         self.userProgress     = [False for i in range (len(self.guessingWord))]
         self.userProgress[0]  = True
         self.userProgress[-1] = True
+        self.displayProgress(self.parseOutputForDisplay(self.guessingWord, self.userProgress))
 
     #Returns a list of indexes on which 'letter' is found
     def wordGetLetterIndexes(self, guessWord, letter):
