@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package version="0.0.38" uuid="pepper-akinator-cf24f9">
+<package version="0.0.39" uuid="pepper-akinator-cf24f9">
  <names>
   <name lang="cs_CZ">Sibenice</name>
   <name lang="en_US">HangmanGame</name>
